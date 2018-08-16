@@ -1,4 +1,21 @@
-.post{
+.post-section{
     border: 1px dashed red;
     height: 100vh;
+    color: #fff;
+}
+.section-1{
+    background-color: #ee0979;
+    background-image: linear-gradient(150deg, transparent, #ff6a00);
+}
+.section-2{
+    background-color: #799f0c;
+    background-image: linear-gradient(150deg, transparent, #ffe000);
+}
+.section-3{
+    background-color: #4a00e0;
+    background-image: linear-gradient(150deg, transparent, #8e2de2);
+}
+.section-4{
+    background-color: #e94057;
+    background-image: linear-gradient(150deg, transparent, #f27121);
 }
