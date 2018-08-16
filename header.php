@@ -9,12 +9,15 @@
 	<body <?php body_class(); ?>>
 
 	<header id="main-header" class="site-header">
-		<h1 class="site-title"><?php bloginfo( 'name' ); ?></h1>
-		<?php
-			$vold_description = get_bloginfo( 'description', 'display' );
-			if ( $vold_description || is_customize_preview() ) :
-		?>
+		<div class="clipping">
+			<div class="header-content">
+			<h1 class="site-title"><?php bloginfo( 'name' ); ?></h1>
+			<?php
+				$vold_description = get_bloginfo( 'description', 'display' );
+				if ( $vold_description || is_customize_preview() ) :
+			?>
 				<p class="site-description"><?php echo $vold_description; /* WPCS: xss ok. */ ?></p>
 			<?php endif; ?>
-
+			</div>
+		</div>
 	</header>
