@@ -1,15 +1,39 @@
 .post-section{
-    border: 1px dashed red;
     height: 100vh;
+    width: 100%;
     color: #fff;
+    background-attachment: fixed;
+    position: relative;
+}
+.post-section .clipping {
+    clip: rect(auto,auto,auto,auto);
+    clip-path: polygon(100% 0,100% 100%,0 100%,0 0);
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    top: 0;
+    left: 0;
+}
+
+.post-section .clipping .post-content {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    top: 0;
+    left: 0;
+    margin: auto;
+}
+.post-content{
+    position: absolute;
 }
 .section-1{
-    background-color: #ee0979;
-    background-image: linear-gradient(150deg, transparent, #ff6a00);
+    background-image: linear-gradient(150deg, #ee0979, #ff6a00);
+    background-attachment: fixed;
+    position: relative;
 }
 .section-2{
-    background-color: #799f0c;
-    background-image: linear-gradient(150deg, transparent, #ffe000);
+    background: linear-gradient(150deg, #799f0c, #ffe000);
+    background-attachment: fixed !important;
 }
 .section-3{
     background-color: #4a00e0;
