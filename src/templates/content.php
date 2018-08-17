@@ -58,4 +58,4 @@
 			</div><!-- .entry-content -->
 		</div>
 	</div>
-</article><!-- #post-<?php the_ID(); ?> -->
+</article><!-- #post-<?php the_ID(); ?> --> 
