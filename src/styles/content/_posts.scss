@@ -45,6 +45,7 @@
     .text-section{
         grid-area: text;
         padding-top: 100px;
+        font-size: 38px;
     }
 }
 
@@ -70,6 +71,7 @@
 .entry-title{
     font-size: 80px;
     color: hsla(0, 100%, 100%, 0.3);
+    font-variant: small-caps;
 }
 
 .featured-image{
