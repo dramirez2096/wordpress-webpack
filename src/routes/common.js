@@ -12,10 +12,10 @@ export default {
         win.addEventListener('mousemove', () => {
             let mouseX = win.event.clientX;
             let mouseY = win.event.clientY;
-            let width = window.innerWidth;
-            let height = window.innerHeight;
+            let width = win.innerWidth;
+            let height = win.innerHeight;
             let horizontalMid = width / 2;
-            let verticalMid = height /2;
+            let verticalMid = height / 2;
             let positionX = mouseX - horizontalMid;
             let positionY = mouseY - verticalMid;
             
@@ -27,7 +27,7 @@ export default {
             let panel = document.querySelectorAll('.panel');
 
             [].forEach.call(panel, (panel) => {
-                panel.style.transform = 'rotateY(' + x + 'deg) rotateX(' + y + 'deg)';
+                panel.style.transform = 'perspective(' + width +'px) rotateY(' + x + 'deg) rotateX(' + -y + 'deg)';
             });
 
             if(mouseX > 0){
