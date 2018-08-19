@@ -1,7 +1,7 @@
 .post-section{
     height: 100vh;
     width: 100%;
-    color: #fff;
+    // color: #fff;
     background-attachment: fixed;
     position: relative;
 }
@@ -60,7 +60,6 @@
 
 .entry-number{
     font-size: 80px;
-    color: hsla(0, 100%, 100%, 0.3);
 }
 
 .featured-image{
@@ -71,20 +70,19 @@
 }
 
 
-.section-1{
-    background-image: linear-gradient(150deg, #ee0979, #ff6a00);
-    background-attachment: fixed;
-    position: relative;
+.section-odd{
+    background-color: $color-secondary;
+    color: $color-third;
+
+    .entry-number{
+        color: hsla(0, 100%, 100%, 0.3);
+    }
 }
-.section-2{
-    background: linear-gradient(150deg, #799f0c, #ffe000);
-    background-attachment: fixed !important;
-}
-.section-3{
-    background-color: #4a00e0;
-    background-image: linear-gradient(150deg, transparent, #8e2de2);
-}
-.section-4{
-    background-color: #e94057;
-    background-image: linear-gradient(150deg, transparent, #f27121);
+.section-even{
+    background-color: $color-third;
+    color: $color-primary;
+
+    .entry-number{
+        color: hsla(0, 0%, 0%, 0.1);
+    }
 }

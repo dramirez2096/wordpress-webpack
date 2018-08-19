@@ -6,10 +6,10 @@
 	</div> -->
 	<?php
 		$custom_classes = array(
-			0=>'section-1',
-			1=>'section-2',
-			2=>'section-3',
-			3=>'section-4',
+			// 0=>'section-1',
+			// 1=>'section-2',
+			// 2=>'section-3',
+			// 3=>'section-4',
 		);
 		$i = 0;
 	?>
@@ -19,7 +19,7 @@
       /* Start the Loop */
 			while ( have_posts() ) : the_post();
 			?>
-			<div <?php echo post_class($custom_classes[$i++]); ?>>
+			<div <?php echo post_class((++$i % 2 === 0) ? 'section-even' : 'section-odd'); ?>>
 				<?php
 				/*
 				 * Include the Post-Type-specific template for the content.
