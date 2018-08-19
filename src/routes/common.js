@@ -19,8 +19,8 @@ export default {
             let positionX = mouseX - horizontalMid;
             let positionY = mouseY - verticalMid;
             
-            let x = (positionX / horizontalMid) * 20;
-            let y = (positionY / verticalMid) * 20;
+            let x = (positionX / horizontalMid) * 13;
+            let y = (positionY / verticalMid) * 13;
 
             y = y * 1;
 
@@ -41,6 +41,17 @@ export default {
             mouseMove ? mouseMove = false : mouseMove = true;
         }, 250);
     }
+
+    let i = 1;
+    let numHead = document.querySelectorAll('.entry-title');
+
+    [].forEach.call(numHead, (h2) => {
+        if (i.toString().length < 2 ){
+            h2.innerHTML = '0' + i++;
+        } else {
+            h2.innerHTML = i ++;
+        }
+    })
     
     console.log('end of common');
   },

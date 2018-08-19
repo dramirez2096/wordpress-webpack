@@ -15,22 +15,7 @@
 			<div class="panel">
 				<div class="img-section">
 					<header class="entry-header">
-						<?php
-						if ( is_singular() ) :
-							the_title( '<h1 class="entry-title">', '</h1>' );
-						else :
-							the_title( '<h2 class="entry-title">', '</h2>' );
-						endif;
-
-						if ( 'post' === get_post_type() ) :
-							?>
-							<div class="entry-meta">
-								<?php
-								// presspack_posted_on();
-								// presspack_posted_by();
-								?>
-							</div><!-- .entry-meta -->
-						<?php endif; ?>
+						<h2 class="entry-title"></h2>
 					</header><!-- .entry-header -->
 
 					<?php $thumbnail = get_the_post_thumbnail_url(); ?>
@@ -50,7 +35,7 @@
 									),
 								)
 							),
-							get_the_title()
+							the_title('<h2>', '</h2>')
 						) );
 						?>
 					</div><!-- .entry-content -->
