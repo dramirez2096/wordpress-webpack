@@ -15,7 +15,7 @@
 			<div class="panel">
 				<div class="img-section">
 					<header class="entry-header">
-						<h2 class="entry-title"></h2>
+						<h2 class="entry-number"></h2>
 					</header><!-- .entry-header -->
 
 					<?php $thumbnail = get_the_post_thumbnail_url(); ?>
@@ -35,7 +35,7 @@
 									),
 								)
 							),
-							the_title('<h2>', '</h2>')
+							the_title('<h2 class="post-title">', '</h2>')
 						) );
 						?>
 					</div><!-- .entry-content -->

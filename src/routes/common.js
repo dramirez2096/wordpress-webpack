@@ -43,7 +43,7 @@ export default {
     }
 
     let i = 1;
-    let numHead = document.querySelectorAll('.entry-title');
+    let numHead = document.querySelectorAll('.entry-number');
 
     [].forEach.call(numHead, (h2) => {
         if (i.toString().length < 2 ){
