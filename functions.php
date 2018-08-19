@@ -22,6 +22,7 @@ add_action('wp_enqueue_scripts', function () {
     $main = $manifest->main;
     wp_enqueue_style('theme-css', get_template_directory_uri() . "/build/" . $main->css,  false, null);
     wp_enqueue_script('theme-js', get_template_directory_uri() . "/build/" . $main->js, ['jquery'], null, true);
+    wp_enqueue_style('theme-fonts', 'https://fonts.googleapis.com/css?family=Open+Sans:300,400,700');
 }, 100);
 
 
