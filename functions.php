@@ -95,6 +95,17 @@ function get_post_for_url($data)
     return $controller->get_item($request);
 }
 
+function custom_header_setup() {
+	add_theme_support( 'custom-header', apply_filters( 'custom_header_args', array(
+		'default-image'          => '',
+		'default-text-color'     => '000000',
+		'width'                  => 500,
+		'height'                 => 300,
+		'flex-height'            => true,
+	) ) );
+}
+add_action( 'after_setup_theme', 'custom_header_setup' );
+
 add_filter('body_class', 'add_slug_to_body_class'); // Add slug to body class (Starkers build)
 
 // Add page slug to body class, love this - Credit: Starkers Wordpress Theme

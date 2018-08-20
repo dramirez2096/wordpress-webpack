@@ -11,12 +11,13 @@
 	<header id="main-header" class="site-header">
 		<div class="clipping">
 			<div class="header-content">
+			<?php the_header_image_tag(); ?>
 			<h1 class="site-title"><?php bloginfo( 'name' ); ?></h1>
 			<?php
-				$vold_description = get_bloginfo( 'description', 'display' );
-				if ( $vold_description || is_customize_preview() ) :
+				$description = get_bloginfo( 'description', 'display' );
+				if ( $description || is_customize_preview() ) :
 			?>
-				<p class="site-description"><?php echo $vold_description; /* WPCS: xss ok. */ ?></p>
+				<p class="site-description"><?php echo $description; /* WPCS: xss ok. */ ?></p>
 			<?php endif; ?>
 			</div>
 		</div>
