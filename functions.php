@@ -29,6 +29,7 @@ add_action('wp_enqueue_scripts', function () {
 /**
  * Theme setup
  */
+add_theme_support('custom-background');
 add_action('after_setup_theme', function () {
     /**
      * Enable features from Soil when plugin is activated

@@ -15,8 +15,8 @@
 				<?php
 					if (display_header_text()==true){
 						echo '<h1>'.get_bloginfo( 'name' ) .'</h1>';
-						echo '<h2>'.get_bloginfo('description').'</h2>';                            
-					} else{
+						echo '<p>'.get_bloginfo('description').'</p>';                            
+					} else {
 						
 					}
 				?>
